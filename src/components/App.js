@@ -8,15 +8,15 @@ import CoursesPage from './courses/CoursesPage';
 
 const App = () => {
   return (
-      <div className="containerFluid">
-          <Header />
-          <Switch>
-            <Route exact path='/' component={HomePage} />
-            <Route path='/about' component={AboutPage} />
-            <Route path='/courses' component={CoursesPage} />
-            <Route component={PageNotFound} />
-          </Switch>
-      </div>
+    <div className="containerFluid">
+      <Header />
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route path="/about" component={AboutPage} />
+        <Route path="/courses" component={CoursesPage} />
+        <Route component={PageNotFound} />
+      </Switch>
+    </div>
   );
 };
 
